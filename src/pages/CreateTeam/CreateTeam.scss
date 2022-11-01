@@ -1,0 +1,121 @@
+@import '../../style/sass/main.scss';
+
+.team-creation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .team-create-container {
+    @include flexSpaceBetween;
+  }
+
+  .team-create-delete {
+    float: right;
+    background: $border-color;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    color: $primary-color;
+  }
+
+  .team-create-panelbar {
+    span.k-link,
+    span.k-link.k-selected {
+      background: $primary-color !important;
+      color: $white-color !important;
+      padding: 1rem !important;
+      border-radius: 0.625rem !important;
+    }
+
+    span.k-icon {
+      color: $white-color !important;
+    }
+
+    .k-animation-container.k-animation-container-relative {
+      overflow: visible !important;
+    }
+  }
+
+  .team-creation-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    background: $white-color;
+    padding: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .team-creation-mobile {
+      font-family: 'Montserrat' !important;
+
+      input {
+        padding: 20px;
+        border: 1px solid #e6ebf0;
+        border-radius: 4px;
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+
+    .team-creation-select {
+      height: 56px;
+    }
+
+    .mySelect__value-container {
+      height: 56px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    .mySelect__placeholder,
+    .mySelect__single-value {
+      color: $grey-1;
+      font-family: 'Montserrat';
+    }
+
+    .mySelect__menu {
+      z-index: 10000;
+    }
+
+    .team-creation-input {
+      border: 2px solid rgba(0, 0, 0, 0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      border-radius: 6px;
+
+      span {
+        color: #d5d9dd;
+      }
+
+      .team-creation-input-label {
+        background: #ededed;
+        padding: 10px 12px;
+        color: #8d939b;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        @include cursorPointer;
+      }
+    }
+
+    .team-creation-helper-text {
+      font-size: 12px;
+      line-height: 14px;
+      color: #acb2ba;
+      width: 100%;
+      font-size: 500;
+      float: right;
+      text-align: right;
+    }
+  }
+}
+.breadcrumb .breadcrumb-item {
+  color: $grey-1;
+}
+.section-breadcrumbs .active {
+    color: $primary-color;
+  }

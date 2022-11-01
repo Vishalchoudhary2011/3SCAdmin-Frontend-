@@ -1,0 +1,10 @@
+{
+  "globalHeaders": {
+    "Access-Control-Allow-Origin": "https://dev.3sc.ai",
+    "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/static/media/*.{svg,png,jpg,gif}", "/css/*"]
+  }
+}

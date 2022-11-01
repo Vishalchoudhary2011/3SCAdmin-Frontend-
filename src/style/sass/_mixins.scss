@@ -1,0 +1,31 @@
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin commonHeading{
+    color: $primary-color;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+@mixin cursorPointer{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin flexSpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

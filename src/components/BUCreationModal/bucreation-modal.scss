@@ -1,0 +1,28 @@
+@import '../../style/sass/main.scss';
+
+.bucreation-modal {
+    text-align: center;
+}
+
+.bucreation-modal-icon {
+    font-size: 4.5rem;
+    color: $status-green;
+    vertical-align: middle;
+}
+
+.bucreation-modal-close{
+    font-size: 1.25rem;
+    @include cursorPointer;
+}
+
+.bucreation-modal-body {
+    width: 24.375rem;
+    height: 13.125rem;
+    @include flexCenter;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $text-color-3;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "title": "Welcome to react using react-i18next",
+    "description": {
+        "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+        "part2": "Switch language between english and german using buttons above."
+    },
+    "Sku_Code": "Sku Code",
+    "Sku_Name": "Sku Name",
+    "ProductHierarchyLevel1": "Brand",
+    "ProductHierarchyLevel2": "Category",
+    "ProductHierarchyLevel3": "Sub-Category",
+    "ProductHierarchyLevel4": "Product",
+    "ProductHierarchyLevel5": "Level 5",
+    "Location_Name": "Location Name",
+    "Sale_Price_Unit": "Sale Price/Unit",
+    "SUCCESS_WITH_ROW_FAILURE": "Data Uploaded Successfully with errors at row number: ",
+    "SUCCESS_WITH_OUT_ROW_FAILURE": "Data Uploaded Successfully!",
+    "FAILED_HEADER_VALIDATION": "CSV Format is incorrect!",
+    "NOT_CSV_FILE": "Please upload csv file",
+    "CSV_PARSE_ERROR": "Please upload csv file",
+    "UNABLE_PROCESS_REQUEST": "There is an issue, please try again"
+}

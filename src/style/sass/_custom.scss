@@ -1,0 +1,9 @@
+// App.scss
+$primary: #292666;
+$grid-bg: #fff;
+
+@import "~@progress/kendo-theme-default/dist/all.scss";
+
+.warning{
+    color: red !important;
+}

@@ -1,0 +1,157 @@
+.k-panelbar>.k-panelbar-header>.k-link {
+    padding: 0 !important;
+}
+
+
+.paneluser th {
+    background-color: #292666;
+    min-width: 218px;
+    color: #fff;
+    padding: 13px 7px;
+}
+
+.paneluser th:first-child {
+    padding-left: 20px !important;
+}
+
+.panedata {
+    width: 100%;
+}
+
+.k-panelbar>.k-panelbar-header>.k-link.k-selected {
+
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.panellevel {
+    width: 100%;
+}
+
+.panellevel td {
+    min-width: 218px;
+    padding-left: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+.panellevel td:first-child {
+    padding-left: 0 !important;
+}
+
+.panellevel td span {
+    padding-left: 0;
+    margin-right: 10px;
+    text-align: unset !important;
+}
+
+.panelevel1 td {
+    text-align: left;
+    background-color: #292666;
+    color: #fff;
+    padding: 9px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    min-width: 218px;
+}
+
+.panelevel1 td:last-child {
+    padding-right: 0 !important;
+}
+
+.panelevel1 td:first-child {
+    background-color: #fff;
+}
+
+.panedata .k-icon {
+    // right: 100%; margin-right: -23px;
+    background-color: #292666;
+    color: #fff !important;
+    position: absolute;
+    left: 16px;
+    top: 0;
+    margin-top: 14px;
+    display: none;
+
+}
+
+.panellevel span .svg-inline--fa {
+    background-color: #292666;
+    color: #fff !important;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 19px;
+}
+
+.panelevel1 td .k-icon {
+    right: 0;
+    background: none;
+    margin-right: 0;
+    color: #292666 !important
+}
+
+.panedata .k-i-chevron-down:before {
+    content: "\e145";
+}
+
+.panedata .k-i-chevron-up:before {
+    content: "\e146";
+}
+
+// Upload CSV
+.k-window {
+    -webkit-border-radius: 20px !important;
+    border-radius: 20px !important;
+}
+
+.span1 {
+    color: #03045e;
+    font-weight: bold;
+}
+
+.k-btn1 {
+    color: #B6B6B4;
+    float: right;
+    margin-top: 0;
+}
+
+.border2 {
+    margin: 20px;
+    border: 2px dashed;
+    border-radius: 10px;
+    color: #B6B6B4;
+}
+
+.div2 {
+    margin: 20px;
+
+}
+
+.k-span {
+    color: #B6B6B4;
+    margin-left: 45%;
+    margin-top: 1px;
+    margin-bottom: 12px;
+    font-size: 50px;
+}
+
+.kh4 {
+    color: #03045e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.kp {
+    color: #B6B6B4;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.bu-csv-error-container {
+    max-height: 15.625rem;
+    width: 31.25rem;
+    overflow-y: auto;
+}

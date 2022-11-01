@@ -1,0 +1,46 @@
+@import '../../../style/sass/main.scss';
+
+.tablegrid {
+
+    .tablegrid-status {
+        @include flexCenter;
+    }
+
+    .tablegrid-status-active,
+    .tablegrid-status-inactive {
+        border-radius: 0.625rem;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.25rem;
+        padding: 13px 11px;
+        @include flexCenter;
+        width: 6.25rem;
+    }
+
+    .tablegrid-status-active {
+        border: 2px solid $status-green;
+        color: $status-green;
+    }
+
+    .tablegrid-status-inactive {
+        border: 2px solid $status-red;
+        color: $status-red;
+    }
+
+    .tablegrid-switch {
+        text-align: center;
+    }
+
+    .tablegrid-heading{
+        // width: 100%;
+        color: $white-color;
+        background: $primary;
+        border: 1px solid #EDEDED;
+        padding: 28px 21px;
+        // height: 82px;
+
+        .k-icon{
+            color: $white-color !important;
+        }
+    }
+}

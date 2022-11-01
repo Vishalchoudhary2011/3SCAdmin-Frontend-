@@ -1,0 +1,63 @@
+@import '../../style/sass/main.scss';
+
+.client-listing {
+    width: 100%;
+    padding: 1.125rem;
+    background: $grey-4;
+
+    .client-listing-content {
+        width: 100%;
+        background: $white-color;
+        padding: 1.25rem;
+    }
+
+    .client-listing-toolbar {
+        margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .client-listing-toolbar-left,
+    .client-listing-toolbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .client-listing-toolbar-left {
+        .client-listing-toolbar-left-refresh {
+            color: $primary-color;
+            background: $link-color-1;
+            padding: 0.8125rem 0.875rem;
+            border-radius: 0.4375rem;
+            @include flexCenter;
+            @include cursorPointer;
+        }
+
+        .show__value-container {
+            padding: 13px;
+        }
+    }
+
+    .client-listing-toolbar-right {
+        .client-listing-toolbar-right-edit {
+            color: $primary-color;
+            background: $link-color-1;
+            padding: 0.8125rem 0.875rem;
+            border-radius: 0.4375rem;
+            @include flexCenter;
+            @include cursorPointer;
+            margin-right: 5px;
+        }
+
+        .client-listing-toolbar-right-edit.disabled {
+            color: $text-color-3;
+            background: $link-color-1;
+
+            &:hover {
+                cursor: not-allowed;
+            }
+        }
+    }
+
+}

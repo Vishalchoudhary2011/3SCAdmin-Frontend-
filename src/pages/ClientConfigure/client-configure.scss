@@ -1,0 +1,62 @@
+@import '../../style/sass/main.scss';
+
+.client-configure {
+    width: 100%;
+    padding: 1.125rem;
+    background: $grey-4;
+
+    .client-configure-main {
+        padding: 1rem;
+        background: $white-color;
+    }
+
+    .client-configure-main-tabs {
+        background: $grey-4;
+    }
+
+    .client-configure-main-content {
+        padding: 1rem;
+        margin-top: 0.5rem;
+
+        .client-configure-main-content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+
+            .config-title {
+                font-size: 1.125rem;
+                color: $primary-color;
+                font-weight: 700;
+                line-height: 1.375rem;
+            }
+
+            .config-edit {
+                height: 3.125rem;
+                width: 3.125rem;
+                background: $grey-6;
+                color: $primary-color;
+                font-size: 1.5rem;
+                border-radius: 0.625rem;
+                @include cursorPointer;
+                @include flexCenter;
+            }
+        }
+
+        //rjv styling
+        .pretty-json-container.object-container {
+            font-size: 1rem;
+            padding: 1.5rem;
+        }
+
+        .client-configure-main-content-submit-buttons {
+            margin-top: 1rem;
+            text-align: right;
+
+            .btn.primary-button {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+}

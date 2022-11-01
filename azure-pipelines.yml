@@ -1,0 +1,60 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- dev
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.16.0'
+  displayName: 'Install Node.js'
+
+- task: SonarQubePrepare@5
+  displayName: Prepare Analysis Configuration task
+  inputs:
+    SonarQube: 'admin_frontend'
+    scannerMode: 'CLI'
+    configMode: 'manual'
+    cliProjectKey: 'SCAI_admin_frontend_AYNNXowO6cL7p3TzwyQW'
+
+- task: SonarQubeAnalyze@5
+  displayName: Run Code Analysis task
+
+- task: SonarQubePublish@5
+  displayName: Publish Quality Gate Result task
+  inputs:
+    pollingTimeoutSec: '300'
+
+- script: |
+    npm install -f
+    npm install env-cmd
+    npm run build:production
+  displayName: 'npm install and build'
+
+- script:
+    npx kendo-ui-license activate
+  displayName: 'Activate Kendo UI License'
+  env:
+    KENDO_UI_LICENSE: $(KENDO_UI_LICENSE)
+
+- task: CopyFiles@2
+  inputs:
+    Contents: 'staticwebapp.config.json'
+    TargetFolder: 'build/'
+
+- task: CopyFiles@2
+  inputs:
+      Contents: 'build/**'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
